@@ -1,4 +1,4 @@
-module github.com/k1LoW/gh-setup
+module github.com/step-security/gh-setup
 
 go 1.25.0
 

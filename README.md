@@ -2,7 +2,7 @@
 
 :octocat: Setup asset of Github Releases.
 
-[![build](https://github.com/step-security/gh-setup/actions/workflows/ci.yml/badge.svg)](https://github.com/step-security/gh-setup/actions/workflows/ci.yml) ![Coverage](https://raw.githubusercontent.com/k1LoW/octocovs/main/badges/step-security/gh-setup/coverage.svg) ![Code to Test Ratio](https://raw.githubusercontent.com/k1LoW/octocovs/main/badges/step-security/gh-setup/ratio.svg)
+[![build](https://github.com/step-security/gh-setup/actions/workflows/ci.yml/badge.svg)](https://github.com/step-security/gh-setup/actions/workflows/ci.yml) ![Coverage](https://raw.githubusercontent.com/step-security/octocovs/main/badges/step-security/gh-setup/coverage.svg) ![Code to Test Ratio](https://raw.githubusercontent.com/step-security/octocovs/main/badges/step-security/gh-setup/ratio.svg)
 
 Key features of `gh-setup` are:
 
@@ -38,7 +38,7 @@ $ gh extension install step-security/gh-setup
 [...]
     steps:
       -
-        name: Setup k1LoW/tbls
+        name: Setup tbls
         uses: step-security/gh-setup@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -59,8 +59,6 @@ $ gh extension install step-security/gh-setup
 ```
 
 ## As a part to create a GitHub Action like `setup-*`
-
-See https://github.com/k1LoW/setup-tbls
 
 ``` yaml
 # action.yml
@@ -140,12 +138,6 @@ $ curl -o gh-setup.apk -L https://github.com/step-security/gh-setup/releases/dow
 $ apk add gh-setup.apk
 ```
 
-**homebrew tap:**
-
-```console
-$ brew install k1LoW/tap/gh-setup
-```
-
 **[aqua](https://aquaproj.github.io/):**
 
 ```console
@@ -165,7 +157,7 @@ $ go install github.com/step-security/gh-setup/cmd/gh-setup@latest
 **docker:**
 
 ```console
-$ docker pull ghcr.io/k1low/gh-setup:latest
+$ docker pull ghcr.io/step-security/gh-setup:latest
 ```
 
 ## Attestation Verification

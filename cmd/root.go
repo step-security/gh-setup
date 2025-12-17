@@ -1,5 +1,6 @@
 /*
 Copyright © 2023 Ken'ichiro Oyama <k1lowxb@gmail.com>
+Copyright (c) 2025 StepSecurity
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -27,10 +28,10 @@ import (
 	"io"
 	"os"
 
-	"github.com/k1LoW/gh-setup/gh"
-	"github.com/k1LoW/gh-setup/setup"
-	"github.com/k1LoW/gh-setup/version"
 	"github.com/spf13/cobra"
+	"github.com/step-security/gh-setup/gh"
+	"github.com/step-security/gh-setup/setup"
+	"github.com/step-security/gh-setup/version"
 	"golang.org/x/exp/slog"
 )
 
@@ -123,5 +124,5 @@ func init() {
 	rootCmd.Flags().BoolVarP(&opt.SkipContentTypeCheck, "skip-content-type-check", "", false, "skip check content-type of assets")
 	rootCmd.Flags().BoolVarP(&verbose, "verbose", "", false, "show verbose log")
 	rootCmd.Flags().BoolVarP(&opt.VerifyAttestation, "verify-attestation", "", false, "enable attestation verification using 'gh attestation verify'")
-	rootCmd.Flags().StringVarP(&opt.AttestationFlags, "attestation-flags", "", "", "additional flags to pass to 'gh attestation verify' (e.g. \"--owner=k1LoW\")")
+	rootCmd.Flags().StringVarP(&opt.AttestationFlags, "attestation-flags", "", "", "additional flags to pass to 'gh attestation verify' (e.g. \"--owner=step-security\")")
 }

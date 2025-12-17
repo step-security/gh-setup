@@ -8,15 +8,15 @@ import (
 )
 
 func TestSortPaths(t *testing.T) {
-	t.Setenv("HOME", "/Users/k1low")
+	t.Setenv("HOME", "/Users/step-security")
 
 	tests := []struct {
 		paths []string
 		want  []string
 	}{
 		{
-			[]string{"/opt/homebrew/bin", "/usr/local/bin", "/usr/local/sbin", "/usr/bin", "/usr/sbin", "/Users/k1low/.local/bin"},
-			[]string{"/Users/k1low/.local/bin", "/usr/local/bin", "/usr/bin"},
+			[]string{"/opt/homebrew/bin", "/usr/local/bin", "/usr/local/sbin", "/usr/bin", "/usr/sbin", "/Users/step-security/.local/bin"},
+			[]string{"/Users/step-security/.local/bin", "/usr/local/bin", "/usr/bin"},
 		},
 	}
 	for _, tt := range tests {

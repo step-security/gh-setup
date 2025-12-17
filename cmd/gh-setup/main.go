@@ -1,5 +1,6 @@
 /*
 Copyright © 2023 Ken'ichiro Oyama <k1lowxb@gmail.com>
+Copyright (c) 2025 StepSecurity
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +22,7 @@ THE SOFTWARE.
 */
 package main
 
-import "github.com/k1LoW/gh-setup/cmd"
+import "github.com/step-security/gh-setup/cmd"
 
 func main() {
 	cmd.Execute()
