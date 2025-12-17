@@ -18,7 +18,7 @@ Key features of `gh-setup` are:
 $ gh setup --repo k1LoW/tbls
 Use tbls_v1.62.0_darwin_arm64.zip
 Setup binaries to executable path (PATH):
-  tbls -> /Users/k1low/local/bin/tbls
+  tbls -> /Users/step-security/local/bin/tbls
 $ tbls version
 1.62.0
 ```
@@ -108,7 +108,7 @@ Run `gh-setup` instead of `gh setup`.
 $ gh-setup --repo k1LoW/tbls
 Use tbls_v1.62.0_darwin_arm64.zip
 Setup binaries to executable path (PATH):
-  tbls -> /Users/k1low/local/bin/tbls
+  tbls -> /Users/step-security/local/bin/tbls
 $ tbls version
 1.62.0
 ```
