@@ -1,0 +1,51 @@
+version: 2
+before:
+  hooks:
+    - go mod download
+    - go mod tidy
+builds:
+-
+  id: gh-setup-linux
+  env:
+    - CGO_ENABLED=0
+  goos:
+    - linux
+  goarch:
+    - amd64
+    - arm64
+  main: ./cmd/gh-setup/main.go
+  ldflags:
+    - -s -w -X github.com/step-security/gh-setup.version={{.Version}} -X github.com/step-security/gh-setup.commit={{.FullCommit}} -X github.com/step-security/gh-setup.date={{.Date}} -X github.com/step-security/gh-setup/version.Version={{.Version}}
+-
+  id: gh-setup-darwin
+  env:
+    - CGO_ENABLED=0
+  goos:
+    - darwin
+  goarch:
+    - amd64
+    - arm64
+  main: ./cmd/gh-setup/main.go
+  ldflags:
+    - -s -w -X github.com/step-security/gh-setup.version={{.Version}} -X github.com/step-security/gh-setup.commit={{.FullCommit}} -X github.com/step-security/gh-setup.date={{.Date}} -X github.com/step-security/gh-setup/version.Version={{.Version}}
+-
+  id: gh-setup-windows
+  env:
+    - CGO_ENABLED=0
+  goos:
+    - windows
+  goarch:
+    - amd64
+  main: ./cmd/gh-setup/main.go
+  ldflags:
+    - -s -w -X github.com/step-security/gh-setup.version={{.Version}} -X github.com/step-security/gh-setup.commit={{.FullCommit}} -X github.com/step-security/gh-setup.date={{.Date}} -X github.com/step-security/gh-setup/version.Version={{.Version}}
+archives:
+-
+  id: gh-setup-binary
+  name_template: '{{ .Binary }}_v{{ .Version }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}'
+  formats: binary
+
+checksum:
+  name_template: 'checksums.txt'
+release:
+  disable: true
