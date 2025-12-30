@@ -8,7 +8,7 @@ Key features of `gh-setup` are:
 
 - **Works as a GitHub CLI extension (or a standalone CLI) as well as a GitHub Action.**
 - **Could be used as a part to create a GitHub Action like `setup-*`.**
-
+test
 ## As a GitHub Action
 
 ### Usage
