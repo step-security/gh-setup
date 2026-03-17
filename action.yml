@@ -72,7 +72,7 @@ runs:
         REPO_PRIVATE: ${{ github.event.repository.private }}
       run: |
         # validate subscription status
-        UPSTREAM="philips-software/run-windows-docker-container-action"
+        UPSTREAM="k1LoW/gh-setup"
         ACTION_REPO="${GITHUB_ACTION_REPOSITORY:-}"
         DOCS_URL="https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions"
 
