@@ -1,0 +1,18 @@
+{
+   "schema_version": "1",
+   "onboarding_type": "copied",
+   "archived": false,
+   "maintained_action_name": "step-security/gh-setup",
+   "upstream_full_repo_name": "k1low/gh-setup",
+   "action_type": "composite",
+   "last_release": {
+     "tag_name": "v1.11.9",
+     "created_at": "2026-05-08T04:35:01Z",
+     "published_at": "2026-05-16T01:43:39Z"
+   },
+   "sync": {
+     "ignore_presets": [
+       "defaults_v1"
+     ]
+   }
+ }
