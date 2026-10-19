@@ -1,0 +1,12 @@
+{
+  "$comment": "Managed automatically when syncing with upstream. Do not edit by hand.",
+  "schema_version": 1,
+  "onboarding_type": "copied",
+  "action_type": "composite",
+  "upstream": {
+    "repository": "k1LoW/gh-setup",
+    "synced_tag": "v1.11.10",
+    "synced_commit": "75f7148db0c44bde69cf3ffb2e559dce1eb26f4b",
+    "archived": false
+  }
+}
